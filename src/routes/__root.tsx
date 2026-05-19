@@ -9,8 +9,6 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import { LanguageProvider } from "@/providers/LanguageProvider";
-import { ThemeProvider } from "@/providers/ThemeProvider";
 
 function NotFoundComponent() {
   return (
@@ -73,19 +71,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { name: "theme-color", content: "#0a1a18" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "Lovable App" },
+      { name: "description", content: "Dubai Legal Connect is a modern, bilingual website for Dubai lawyers, offering a professional online presence." },
+      { name: "author", content: "Lovable" },
+      { property: "og:title", content: "Lovable App" },
+      { property: "og:description", content: "Dubai Legal Connect is a modern, bilingual website for Dubai lawyers, offering a professional online presence." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:description", content: "Dubai Legal Connect is a modern, bilingual website for Dubai lawyers, offering a professional online presence." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6c496c0d-6789-428a-953b-46b7650f881a/id-preview-0c7b173e--d00ef07f-3f88-4750-845f-382f90b54f5f.lovable.app-1779197207298.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6c496c0d-6789-428a-953b-46b7650f881a/id-preview-0c7b173e--d00ef07f-3f88-4750-845f-382f90b54f5f.lovable.app-1779197207298.png" },
     ],
     links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: "/manifest.webmanifest" },
-      { rel: "icon", href: "/icon-192.png", type: "image/png" },
-      { rel: "apple-touch-icon", href: "/icon-192.png" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap",
+        href: appCss,
       },
     ],
   }),
@@ -114,11 +117,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <LanguageProvider>
-          <Outlet />
-        </LanguageProvider>
-      </ThemeProvider>
+      <Outlet />
     </QueryClientProvider>
   );
 }
