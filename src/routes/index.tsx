@@ -7,6 +7,7 @@ import { Services } from "@/components/site/Services";
 import { About } from "@/components/site/About";
 import { Gallery } from "@/components/site/Gallery";
 import { Showreel } from "@/components/site/Showreel";
+import { InstagramFeed } from "@/components/site/InstagramFeed";
 import { Pricing } from "@/components/site/Pricing";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Blog } from "@/components/site/Blog";
