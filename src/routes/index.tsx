@@ -70,6 +70,8 @@ function Index() {
         <WhyMe />
         <Services />
         <About />
+        <Gallery />
+        <Showreel />
         <Pricing />
         <Testimonials />
         <Blog />
