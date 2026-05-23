@@ -18,15 +18,26 @@ export const strings = {
     },
     hero: {
       eyebrow: "Dubai · Tennis & Fitness Coach",
-      title: "Play Stronger.",
-      titleAccent: "Move Better.",
-      sub: "Private tennis lessons and personalized fitness coaching in Dubai — for adults, juniors, and competitive players.",
+      title: "Play stronger.",
+      titleAccent: "Move like an athlete.",
+      sub: "Private 1:1 tennis lessons and personalized fitness coaching across Dubai — for adults, juniors, and competitive players who want real, measurable progress.",
       stats: [
         { value: "12+", label: "Years Coaching" },
         { value: "400+", label: "Players Trained" },
         { value: "5★", label: "Avg. Rating" },
       ],
       waMessage: "Hi Mohammad, I'd like to book an intro tennis session.",
+    },
+    gallery: {
+      eyebrow: "On Court",
+      title: "Every stroke,",
+      titleAccent: "every detail.",
+      sub: "Real sessions, real Dubai courts. This is the work — not stock photography.",
+    },
+    showreel: {
+      eyebrow: "Showreel",
+      title: "The dance of",
+      titleAccent: "ball and net.",
     },
     marquee: [
       "Private Tennis Lessons",
@@ -187,14 +198,25 @@ export const strings = {
     hero: {
       eyebrow: "دبي · مدرب تنس ولياقة",
       title: "العب أقوى.",
-      titleAccent: "تحرّك أفضل.",
-      sub: "حصص تنس خاصة وتدريب لياقة مخصّص في دبي — للكبار، الناشئين، واللاعبين التنافسيين.",
+      titleAccent: "تحرّك كرياضي محترف.",
+      sub: "حصص تنس خاصة فردية وتدريب لياقة مخصّص في دبي — للكبار، الناشئين، واللاعبين التنافسيين الذين يريدون تقدماً حقيقياً قابلاً للقياس.",
       stats: [
         { value: "+12", label: "سنة خبرة" },
         { value: "+400", label: "لاعب مُدرّب" },
         { value: "★5", label: "متوسط التقييم" },
       ],
       waMessage: "مرحباً محمد، أرغب بحجز حصة تنس تعارفية.",
+    },
+    gallery: {
+      eyebrow: "في الملعب",
+      title: "كل ضربة،",
+      titleAccent: "كل تفصيل.",
+      sub: "حصص حقيقية في ملاعب دبي. هذا هو العمل — وليس صوراً تجارية.",
+    },
+    showreel: {
+      eyebrow: "العرض",
+      title: "رقصة الكرة",
+      titleAccent: "والشبكة.",
     },
     marquee: [
       "حصص تنس خاصة",
