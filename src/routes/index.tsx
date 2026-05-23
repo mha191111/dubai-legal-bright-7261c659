@@ -73,6 +73,7 @@ function Index() {
         <About />
         <Gallery />
         <Showreel />
+        <InstagramFeed />
         <Pricing />
         <Testimonials />
         <Blog />
