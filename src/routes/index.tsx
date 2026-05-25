@@ -15,6 +15,7 @@ import { Faq } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { MobileStickyBar } from "@/components/site/MobileStickyBar";
+import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { CONTACT } from "@/lib/contact";
 
 const title = "Mohammad Moslem — Tennis & Fitness Coach in Dubai | Private Lessons";
@@ -82,6 +83,11 @@ function Index() {
       </main>
       <Footer />
       <MobileStickyBar />
+      <WhatsAppButton
+        message="Hello! I would like to book a tennis session."
+        label=""
+        className="fixed left-4 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] lg:bottom-[calc(1rem+env(safe-area-inset-bottom))] z-50 inline-flex h-14 w-14 items-center justify-center rounded-full p-0 text-[var(--ball-foreground)] shadow-glow transition-transform duration-300 hover:scale-105"
+      />
     </div>
   );
 }

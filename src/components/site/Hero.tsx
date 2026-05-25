@@ -25,7 +25,7 @@ export function Hero() {
         <div className="absolute inset-0 noise-overlay" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 pb-24 md:px-8 md:pb-28 lg:grid-cols-12 lg:items-center lg:gap-8">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 pb-24 md:px-8 md:pb-28 md:[grid-template-columns:minmax(0,1fr)_auto] lg:grid-cols-12 lg:items-center lg:gap-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,6 +69,8 @@ export function Hero() {
             ))}
           </dl>
         </motion.div>
+
+        {/* Mobile/tablet image removed per request */}
 
         <motion.div
           initial={{ opacity: 0, scale: 0.94, y: 30 }}
