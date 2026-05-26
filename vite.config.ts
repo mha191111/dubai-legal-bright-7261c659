@@ -1,6 +1,5 @@
 // @lovable.dev/vite-tanstack-config already includes tanstackStart,
 // viteReact, tailwindcss, tsconfigPaths, aliases, and other plugins.
-// Do NOT add tanstackStart or React manually.
 
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { nitro } from "nitro/vite";
